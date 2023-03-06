@@ -1,0 +1,214 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+double sum()
+{
+	double num1,num2;
+	cout<< "Ievadi 2 skaitlus" << endl;
+	cin >> num1 >> num2;
+	return num1+num2;
+
+}
+
+
+double quadr()
+{
+	double num1;
+	cout << "Ievadi 1 skaitli" << endl;
+	cin >> num1;
+	return num1*num1;
+}
+
+
+
+void average()
+{
+	vector<double> n {1,2,3,4,5};
+	cout << n[0]+n[1]+n[2]+n[3]+n[4]/ 5;
+}
+
+
+
+void even(){
+	vector<int> n{1,2,3,4,5};
+	int i=0;
+	do{
+		if(n[i] % 2 ==0)cout << n[i] << " ";
+		i++;
+	} while(i < n.size());
+}
+
+
+
+void prime()
+{
+	vector<int> p{2,3,7,11,13,17,19};
+	int num1;
+	cout<<"Ievadi skaitli, kas ir >20, bet 0<"<< endl;
+	cin>>num1;
+	int i=0; bool a=false;
+	do{
+		if(num1== p[i]){cout << "true"; a=true;}
+		i++;
+	} while(i<p.size());
+	if(a==false)cout<<"false";
+}
+
+void ss()
+{
+	vector<int> s{1,2,3,4,5,6};
+	int i=0, sum=0;
+	do{
+		cout<<s[i]*s[i] << " ";
+		sum=sum + s[i]*s[i];
+		i++;
+	} while(i<s.size());
+	cout<< sum;
+}
+
+void poz()
+{
+	vector<int> poz{1,-2,3,-4,5};
+	int i=0;
+	do{
+		if(poz[i]>0) cout << poz[i] << " ";
+		i++;
+	} while(i<poz.size());
+}
+
+void neg()
+{
+	vector<int> neg{1,-2,3,-4,5};
+	int i=0;
+	do{
+		if(neg[i]<0) cout << neg[i] << " ";
+		i++;
+	} while(i<neg.size());
+}
+
+void vards()
+{
+	string var="Hello";
+	int i=var.size();
+	do{
+		cout << var[i];
+		i--;
+	} while(i !=-1);
+}
+
+
+void palindrome()
+{
+	string var="racecar";
+	if(var[0]==var[6]&& var[1]==var[5]&&var[2]==var[4]);
+	
+	
+}
+
+vector <int> a(vector<int>k)
+{
+	return k;
+}
+
+
+
+
+
+
+
+
+
+
+
+double difference()
+{
+	double num1,num2;
+	cout<< "Ievadi 2 skaitlus" << endl;
+	cin >> num1 >> num2;
+	return num1 - num2;
+
+}
+
+double pakape()
+{
+	double num1;
+	cout << "Ievadi 1 skaitli" << endl;
+	cin >> num1;
+	return num1*num1*num1;
+}
+
+double divkarsota()
+{
+	double num1;
+	cout << "Ievadi 1 skaitli" << endl;
+	cin >> num1;
+	return num1*2;
+}
+
+void uneven(){
+	vector<int> n{1,2,3,4,5,6,7,8};
+	int i=0;
+	do{
+		if(n[i]%2 !=0)cout << n[i] << " ";
+		i++;
+	} while(i < n.size());
+}
+
+
+
+void para()
+{
+	int num1;
+	cout << "Ievadi 1 skaitli" << endl;
+	cin >> num1;
+	if(num1%2==0)
+	{
+		cout << "Para";
+	}
+	if(num1%2 !=0)
+	{
+		cout << "Nepara";
+	}
+}
+
+
+
+void puse()
+{
+	string var="ammendment";
+	cout << var[0]<< var[1] << var[2] <<var[3] << var[4];
+
+}
+
+void vards2()
+{
+	string var="ammendment";
+
+	int i=var.size();
+	do{
+		cout << var[i];
+		i--;
+	} while(i !=-1);
+}
+
+
+int main()
+{
+	//cout << sum() <<" "<< quadr();
+	//average();
+	//even();
+	//prime();
+	//ss();
+	//poz();
+	//vards();
+	//palindrome();
+	//vector<int> k{1,2,3};
+	//cout << a(k)[0]<<a(k)[1]<<a(k)[2];
+	//cout<<difference();
+	//cout<<pakape();
+	//cout<<divkarsota();
+	//uneven();
+	//para();
+	//puse();
+	vards2();
+}
